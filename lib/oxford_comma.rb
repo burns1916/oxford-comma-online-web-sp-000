@@ -1,9 +1,8 @@
 def oxford_comma(array)
-case array
-when array.length > 2
+if array.length > 2
   array[-1].prepend "and "
   array.join(", ")
-when array.length == 2
+elsif array.length == 2
   array[-2] << " and "
   array.join
 else
@@ -11,4 +10,4 @@ else
 end
 end
 
-oxford_comma(array)
+
